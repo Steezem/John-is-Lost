@@ -23,7 +23,7 @@ public class ThirdPersonCamera : MonoBehaviour
     {
         controls = new PlayerMovement();
         controls.Enable();
-        //controls.CameraControls.MouseZoom.performed += HandleMouseScroll;
+        controls.CameraControls.MouseZoom.performed += HandleMouseScroll;
 
         Cursor.lockState = CursorLockMode.Locked;
         cam = GetComponent<CinemachineCamera>();
@@ -50,11 +50,11 @@ public class ThirdPersonCamera : MonoBehaviour
             }
         }
 
-        //float bumperDelta = controls.CameraControls.GamepadZoom.ReadValue<float>();
-        //if (bumperDelta != 0)
-        //{
-        //    targetZoom = Mathf.Clamp(orbital.Radius - bumperDelta * zoomSpeed, minDistance, maxDistance);
-        //}
+        float bumperDelta = controls.CameraControls.GamepadZoom.ReadValue<float>();
+        if (bumperDelta != 0)
+        {
+            targetZoom = Mathf.Clamp(orbital.Radius - bumperDelta * zoomSpeed, minDistance, maxDistance);
+        }
         currentZoom = Mathf.Lerp(currentZoom, targetZoom, Time.deltaTime * zoomLerpSpeed);
         orbital.Radius = currentZoom;
     }

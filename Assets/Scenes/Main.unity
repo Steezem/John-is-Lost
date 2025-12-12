@@ -359,7 +359,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 4214eec6110842341948b330c4e06155, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -483,6 +483,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: ee8b07ba-65cd-45a6-938f-277638522a62
     m_ActionName: 'Gameplay/Camera[/DualSenseGamepadHID/rightStick,/Mouse/delta]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 09a655ca-2be4-4360-8342-9b76b8230004
+    m_ActionName: 'CameraControls/MouseZoom[/Mouse/scroll]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2b3f7e58-a2d0-4a0f-9f01-558f5678d28f
+    m_ActionName: 'CameraControls/GamepadZoom[/DualSenseGamepadHID/leftShoulder,/DualSenseGamepadHID/rightShoulder]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -655,6 +663,7 @@ GameObject:
   - component: {fileID: 1163433609}
   - component: {fileID: 1163433608}
   - component: {fileID: 1163433607}
+  - component: {fileID: 1163433612}
   m_Layer: 0
   m_Name: PlayerCam
   m_TagString: Untagged
@@ -789,7 +798,7 @@ MonoBehaviour:
   VerticalAxis:
     Value: 17.5
     Center: 17.5
-    Range: {x: 0, y: 45}
+    Range: {x: 0, y: 89}
     Wrap: 0
     Recentering:
       Enabled: 0
@@ -864,6 +873,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1163433612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163433606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78f3ceef8f891d4c8055f2e820df66a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ThirdPersonCamera
+  zoomSpeed: 2
+  zoomLerpSpeed: 10
+  minDistance: 3
+  maxDistance: 15
 --- !u!1 &1473361567
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,7 +955,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 638a31baaa1416a4b8b56c56d14d4a85, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
