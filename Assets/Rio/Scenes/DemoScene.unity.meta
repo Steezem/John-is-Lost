@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 64b182395c0b6744a920c74bce3ece13
-PrefabImporter:
+guid: b98cc120da57c594092a4eed208d53c8
+DefaultImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -9,6 +9,6 @@ AssetOrigin:
   serializedVersion: 1
   productId: 273074
   packageName: LowPoly Survival Character Rio
-  packageVersion: 1.0
-  assetPath: Assets/Unity Technologies/LowpolyCharacterRio/Prefabs/Rio.prefab
-  uploadId: 670968
+  packageVersion: 
+  assetPath: Assets/Rio/LowpolyCharacterRio/Scenes/DemoScene.unity
+  uploadId: 0
