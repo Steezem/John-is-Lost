@@ -23,16 +23,13 @@ public class CharacterMovement : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-        Debug.Log($"Move Input: {moveInput}");
     }
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        Debug.Log($"Jumping {context.performed} - Is Grounded: {controller.isGrounded}");
 
         if (context.performed && controller.isGrounded)
         {
-            Debug.Log("We're jumping");
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
     }
