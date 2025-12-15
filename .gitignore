@@ -75,6 +75,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # Ignore Envelop Media Asset Pack (Ambient Sound, wav files are too big)
-/[Aa]ssets/Sounds/*
-/[Aa]ssets/TextMesh Pro*
+/[Aa]ssets/Asset Store/*
 

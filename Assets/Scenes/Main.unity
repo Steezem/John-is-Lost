@@ -876,6 +876,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 2b3f7e58-a2d0-4a0f-9f01-558f5678d28f
     m_ActionName: 'CameraControls/GamepadZoom[/DualSenseGamepadHID/leftShoulder,/DualSenseGamepadHID/rightShoulder]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: aae2e292-bc1c-47bc-bc8c-6fb1a292d861
+    m_ActionName: 'Gameplay/Sprint[/Keyboard/shift]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: dab18616-2577-4218-8dc6-b3c3c7de9ad5
+    m_ActionName: 'Gameplay/Interact[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -2215,6 +2223,10 @@ PrefabInstance:
     - target: {fileID: 4646558406458008451, guid: ccb827209b4553847a8b07b567c53bfb, type: 3}
       propertyPath: m_Name
       value: Peeta
+      objectReference: {fileID: 0}
+    - target: {fileID: 4646558406458008451, guid: ccb827209b4553847a8b07b567c53bfb, type: 3}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 8907012567464701675, guid: ccb827209b4553847a8b07b567c53bfb, type: 3}
       propertyPath: m_LocalPosition.x

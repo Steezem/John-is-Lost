@@ -10,8 +10,11 @@ public class InteractionRaycast : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, 3f) && context.performed)
         {
-            manager.StartDialogue();
-            Debug.Log("Interacted with " + hit.transform.name);
+            Debug.Log("Interacted with " + hit.transform.name + hit.transform.tag);
+            if (hit.transform.tag == "NPC")
+            {
+                manager.StartDialogue();
+            }
         }
     }
 
