@@ -2,22 +2,6 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-[System.Serializable]
-public class DialogueLine : MonoBehaviour
-{
-    public string speakerName;
-    public string text;
-    public DialogueOption[] options;
-
-}
-
-[System.Serializable]
-public class DialogueOption : MonoBehaviour
-{
-    public string text;
-    public int nextLineIndex;
-}
-
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI speakerNameText;
@@ -108,4 +92,20 @@ public class DialogueManager : MonoBehaviour
     {
         dialoguePanel.SetActive(false);
     }
+}
+
+[System.Serializable]
+public class DialogueLine : MonoBehaviour
+{
+    public string speakerName;
+    public string text;
+    public DialogueOption[] options;
+
+}
+
+[System.Serializable]
+public class DialogueOption : MonoBehaviour
+{
+    public string text;
+    public int nextLineIndex;
 }
