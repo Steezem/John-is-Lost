@@ -3,9 +3,6 @@ using UnityEngine.InputSystem;
 
 public class InteractionRaycast : MonoBehaviour
 {
-    public DialogueManager manager;
-
-
     public void OnInteract(InputAction.CallbackContext context)
     {
         RaycastHit hit;
@@ -15,8 +12,9 @@ public class InteractionRaycast : MonoBehaviour
             if (hit.transform.tag == "NPC")
             {
                 Debug.Log(gameObject.name + " Interacted with " + hit.transform.name + " " + hit.transform.tag);
-                manager.StartDialogue();
-
+                // by doing this, you don't have to manually add the DialogueManager to the Interaction Script on the player character
+                // Problems may arise if multiple Dialogue Managers are available
+                FindAnyObjectByType<DialogueManager>().StartDialogue(hit.transform.GetComponent<DialogueTrigger>().dialogue);
             }
         }
     }
