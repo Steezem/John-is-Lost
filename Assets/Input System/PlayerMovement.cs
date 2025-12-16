@@ -275,7 +275,7 @@ public partial class @PlayerMovement: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""4f7f8b47-2cf7-4ee1-abef-51c96ff449d4"",
                     ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interact"",
