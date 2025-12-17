@@ -29,13 +29,12 @@ public class DialogueManager : MonoBehaviour
     {
         // this catches the Interaction call of StartDialogue
         // It works, but is very spaghetti-like
-        // Another found solution is below - disabling the InteractionRaycast Module of the Player Character until EndDialogue is called
-        if (inDialogue) return;
+        //if (inDialogue) return;
 
         nameText.text = dialogue.name;
         sentences.Clear();
         playerCharacter.GetComponent<CharacterMovement>().enabled = false;
-        //playerCharacter.GetComponent<InteractionRaycast>().enabled = false;
+        playerCharacter.GetComponent<InteractionRaycast>().enabled = false;
 
         foreach (string sentence in dialogue.sentences)
         {
@@ -62,7 +61,6 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
 
-
     }
 
     IEnumerator TypeSentence (string sentence)
@@ -77,6 +75,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
+        Debug.Log("EndDialogue fires");
         animator.SetBool("isOpen", false);
         //dialoguePanel.SetActive(false);
         playerCharacter.GetComponent<CharacterMovement>().enabled = true;
