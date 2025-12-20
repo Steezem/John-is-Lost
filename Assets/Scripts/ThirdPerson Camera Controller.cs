@@ -1,6 +1,7 @@
+using Unity.Cinemachine;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Unity.Cinemachine;
 
 public class ThirdPersonCamera : MonoBehaviour
 {
@@ -55,7 +56,9 @@ public class ThirdPersonCamera : MonoBehaviour
         {
             targetZoom = Mathf.Clamp(orbital.Radius - bumperDelta * zoomSpeed, minDistance, maxDistance);
         }
+
         currentZoom = Mathf.Lerp(currentZoom, targetZoom, Time.deltaTime * zoomLerpSpeed);
         orbital.Radius = currentZoom;
+
     }
 }
