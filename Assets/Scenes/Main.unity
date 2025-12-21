@@ -557,6 +557,7 @@ Transform:
   - {fileID: 1149747482}
   - {fileID: 750579247}
   - {fileID: 1604921005}
+  - {fileID: 1621964581}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &263659853 stripped
@@ -1282,6 +1283,7 @@ Transform:
   - {fileID: 1458461643}
   - {fileID: 641962387}
   - {fileID: 263659856}
+  - {fileID: 1831297278}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &740508470
@@ -3022,6 +3024,88 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8907012567464701675, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
   m_PrefabInstance: {fileID: 1604921004}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1621964580
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 261360166}
+    m_Modifications:
+    - target: {fileID: 297113506820694063, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: dialogue.name
+      value: Benedictine
+      objectReference: {fileID: 0}
+    - target: {fileID: 297113506820694063, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 297113506820694063, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[0]'
+      value: Why are you on my property, peasant?
+      objectReference: {fileID: 0}
+    - target: {fileID: 297113506820694063, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[1]'
+      value: Get out, or I will call Max!
+      objectReference: {fileID: 0}
+    - target: {fileID: 581591682844321816, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: m_Name
+      value: Benedictine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4646558406458008451, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: m_Name
+      value: Benedictine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907012567464701675, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 52.995567
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907012567464701675, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.63544
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907012567464701675, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 37.83946
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907012567464701675, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907012567464701675, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907012567464701675, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907012567464701675, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907012567464701675, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907012567464701675, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8907012567464701675, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+--- !u!4 &1621964581 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8907012567464701675, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
+  m_PrefabInstance: {fileID: 1621964580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1635086599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3222,13 +3306,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831297277}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 584808300}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 715668061}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1930567636 stripped
 GameObject:
@@ -3740,4 +3824,3 @@ SceneRoots:
   - {fileID: 261360166}
   - {fileID: 715668061}
   - {fileID: 2182082236568906020}
-  - {fileID: 1831297278}
