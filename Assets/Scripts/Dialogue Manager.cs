@@ -43,7 +43,6 @@ public class DialogueManager : MonoBehaviour
         playerCharacter.GetComponent<CharacterMovement>().enabled = false;
         playerCharacter.GetComponent<InteractionRaycast>().enabled = false;
 
-        Debug.Log(dialogue.sentences.Length);
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
@@ -64,7 +63,6 @@ public class DialogueManager : MonoBehaviour
         }
         
         string sentence = sentences.Dequeue();
-        Debug.Log(sentence);
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
 
