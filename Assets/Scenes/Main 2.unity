@@ -2460,7 +2460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 297113506820694063, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
       propertyPath: 'dialogue.sentences.Array.data[0]'
-      value: Ew, go away.
+      value: Why is your nose like that?
       objectReference: {fileID: 0}
     - target: {fileID: 581591682844321816, guid: c1aeb396df9b8c545bc98b3e63434c7d, type: 3}
       propertyPath: m_Name
@@ -3190,8 +3190,8 @@ MonoBehaviour:
     - No one knows what those are.
     - And then there's this fog...
     - I also heard some strange things coming from the mountains back there.
-    - If only I could move away from this spot...
-    - At least I'm animated!
+    - I may be animated...
+    - But I never wanted to run away as much as now.
 --- !u!1001 &1458461642
 PrefabInstance:
   m_ObjectHideFlags: 0

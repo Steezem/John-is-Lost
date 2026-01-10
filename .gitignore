@@ -77,3 +77,6 @@ crashlytics-build.properties
 # Ignore Envelop Media Asset Pack (Ambient Sound, wav files are too big)
 /[Aa]ssets/Asset Store/*
 /[Aa]ssets/Poly Haven Assets/*
+
+# Ignore Story Doc
+Story beats.txt
